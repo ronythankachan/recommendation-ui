@@ -1,0 +1,96 @@
+.recommendation-page {
+  max-width: 80%;
+  min-height: 100vh;
+  border: 1px solid gray;
+  border-radius: 10px;
+  .title {
+    display: flex;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .recommendation-form-wrap {
+    border: 0px solid #212529;
+    background-color: lightgrey;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    .btn-delete {
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      right: 10px;
+      color: #5b7480;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 10px;
+      label {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: left;
+      }
+      select {
+        width: 300px;
+        padding: 8px 2px;
+      }
+    }
+    .form-control {
+      border-radius: 4px;
+      border: 1px solid gray;
+      display: block;
+    }
+    .row {
+      display: flex;
+      column-gap: 20px;
+    }
+    .recommendation-save-btn {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 10px;
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+  .ruleview-wrap {
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    min-height: 150px;
+    padding: 10px;
+    position: relative;
+    .controls {
+      position: absolute;
+      right: 10px;
+      button {
+        margin-left: 10px;
+      }
+    }
+    .rule-details {
+      display: flex;
+      line-height: 0.6;
+      .rulename {
+        min-width: 300px;
+        font-weight: bolder;
+        color: gray;
+      }
+      .recommendation-list {
+        display: flex;
+        flex-wrap: wrap;
+        .recommendation {
+          width: fit-content;
+          padding: 10px;
+          min-width: fit-content;
+          border: 1px solid grey;
+          border-radius: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
